@@ -4,7 +4,7 @@ import {lists} from "./App.js"
 
 function Listitem(props) {
     const studentlist=useContext(lists)
-    const [isfavoriteid, setisfavoriteid] = useState()
+    const [, setisfavoriteid] = useState()
     
     const setnewlist=props.setnewlist
     const newlist=props.newlist
