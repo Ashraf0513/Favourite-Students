@@ -1,10 +1,10 @@
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import {lists} from "./App.js"
 
 
 function Listitem(props) {
     const studentlist=useContext(lists)
-    const [, setisfavoriteid] = useState()
+    //const [, setisfavoriteid] = useState()
     
     const setnewlist=props.setnewlist
     const newlist=props.newlist
@@ -12,7 +12,7 @@ function Listitem(props) {
    
 
     function handleAdd(addid) {
-        setisfavoriteid(addid)
+       // setisfavoriteid(addid)
         setnewlist([...newlist,addid])
         
     }
